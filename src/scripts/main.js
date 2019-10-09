@@ -91,3 +91,24 @@ const familyMembers = [Mom, Jane, Annie, Molly, Joseph]
 console.table("familyMembers", familyMembers);
 
 document.querySelector(".title").innerHTML = "This is a test."
+
+const wardrobe = {
+    height: 80,
+    manufacturer: "Killibrew & Sons",
+    contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
+    depth: 38,
+    width: 50
+}
+
+console.log("Wardrobe", wardrobe);
+
+// Lightning Exercise 4: Given the object above, output each of the values to the console using dot notation.
+
+console.log(`Height: ${wardrobe.height}`);
+console.log(`Manufacturer: ${wardrobe.manufacturer}`);
+console.log(`Contents: ${wardrobe.contents}`);
+console.log(`Depth: ${wardrobe.depth}`);
+console.log(`Width: ${wardrobe.width}`);
+console.log(wardrobe.contents[0], wardrobe.contents[1]);
+
+
