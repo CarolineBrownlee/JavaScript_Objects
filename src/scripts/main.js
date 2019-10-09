@@ -55,33 +55,39 @@ console.table("animals", animals)
 
 // Lightning Exercise 3: Define an object for four family members, and put each object in an array named familyMembers. Each family member object that you create should have the same keys on them, but the values will be different.
 
-const familyMembers = [
-    {
+
+   const Mom = {
         name: "Caroline",
         age: 41, 
         gender: "female"
-    },
-    {
+    }
+    
+    const Jane = {
         name: "Jane",
         age: 15, 
         gender: "female"
-    },
-    {
+    }
+
+    const Annie = {
         name: "Annie",
         age: 13, 
         gender: "female"
-    },
-    {
+    }
+    
+    const Molly = {
         name: "Molly",
         age: 9, 
         gender: "female"
-    },
-    {
+    }
+
+    const Joseph = {
         name: "Joseph",
         age: 2, 
         gender: "male"
     }
-]
+
+
+const familyMembers = [Mom, Jane, Annie, Molly, Joseph]
 console.table("familyMembers", familyMembers);
 
 document.querySelector(".title").innerHTML = "This is a test."
