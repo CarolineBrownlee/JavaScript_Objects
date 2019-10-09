@@ -112,3 +112,16 @@ console.log(`Width: ${wardrobe.width}`);
 console.log(wardrobe.contents[0], wardrobe.contents[1]);
 
 
+const lassie = {
+    age: 7,
+    breed: "Collie",
+    color: "White and Brown"
+}
+
+//*****/ ACCESSING KEYS IN OBJECTS /*****//
+
+console.log("Dot Notation: ", lassie.breed)
+console.log("Square Bracket Notation: ", lassie["breed"])
+
+const keyToLookup = "breed"
+console.log(lassie[keyToLookup])
