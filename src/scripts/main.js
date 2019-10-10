@@ -169,3 +169,50 @@ console.log(empireStateBuilding["constructionDate"]);
 console.log(empireStateBuilding["cost"]);
 console.log(empireStateBuilding["architect"]);
 
+// Arrays as Values:
+
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
+}
+
+// Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
+
+// example from chapter:
+
+// const boardedAnimals = kennel.currentAnimals
+
+// for (let i = 0; i < boardedAnimals.length; i++) {
+//     console.log(boardedAnimals[i])
+// }
+
+// > "Jet"
+// > "Snickers"
+// > "Blue"
+// > "Jacks"
+// > "Flap"
+// > "Barnum"
+
+const partTimeInstructors = nashvilleSoftwareSchool.instructors.partTime
+
+for (let i = 0; i < partTimeInstructors.length; i++) {
+    console.log("part time instructor: ", partTimeInstructors[i])
+}
+
+ const fullTimeInstructors = nashvilleSoftwareSchool.instructors.fullTime
+
+ for (let i = 0; i < fullTimeInstructors.length; i++) {
+     console.log("full time instructor: ", fullTimeInstructors[i])
+ }
+
+// Lightning Exercise 2: Output only Andy and Zoe in the console.
+
+console.log(`Only Andy: ${nashvilleSoftwareSchool.instructors.fullTime[4]}`);
+console.log(`Only Zoe: ${nashvilleSoftwareSchool.instructors.partTime[0]}`);
+
+
