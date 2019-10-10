@@ -1,4 +1,4 @@
-
+// ***** IN CLASS LECTURE EXERCISES ***** //
 
 // Lightning Exercise 1: Given two options of data structures - array or object - which should you use? You need to represent a red 2015 Ford Mustang in your code.
 
@@ -125,3 +125,47 @@ console.log("Square Bracket Notation: ", lassie["breed"])
 
 const keyToLookup = "breed"
 console.log(lassie[keyToLookup])
+
+// ***** ADDING KEY VALUE PAIRS TO AN OBJECT ***** //
+
+lassie.favoriteToy = "Frisbee"
+console.log("lassie with favorite toy: ", lassie);
+
+lassie["favoriteFood"] = "Kibble"
+console.log("lassie with favorite food: ", lassie);
+
+// ***** BEGINNING OF PRACTICE EXERCISES ***** //
+
+console.log("BEGINNING OF PRACTICE EXERCISES")
+
+const empireStateBuilding = {
+    stories: 103,
+    height: 1453,
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    squareFeet: 2768591,
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    eastWestLength: 424,
+    northSouthLength: 187,
+    architect: "Shreve, Lamb & Harmon"
+}
+
+// Lightning Exercises 1: Use dot notation to output all of the dimensions of the Empire State Building to the console.
+
+console.log(`height: ${empireStateBuilding.height}`);
+console.log(`east west length: ${empireStateBuilding.eastWestLength}`);
+console.log(`square feet: ${empireStateBuilding.squareFeet}`);
+console.log(`north south length: ${empireStateBuilding.northSouthLength}`);
+
+
+// Lightning Exercises 2: Use square bracket notation to output the remaining 5 properties to the console. Create 5 variables first with the keys as their values. Use those variables to look up the values.
+
+// "Square Bracket Notation: ", lassie["breed"]
+
+console.log(empireStateBuilding["stories"]);
+console.log(empireStateBuilding["address"]);
+console.log(empireStateBuilding["constructionDate"]);
+console.log(empireStateBuilding["cost"]);
+console.log(empireStateBuilding["architect"]);
+
